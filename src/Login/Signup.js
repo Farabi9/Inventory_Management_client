@@ -132,6 +132,9 @@ const SignUp = () => {
                     <button
                         onClick={() => signInWithGoogle()}
                         className="btn btn-outline uppercase">Continue With google</button>
+                        <h3>
+                            hu
+                        </h3>
 
                 </div>
             </div>
