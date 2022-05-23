@@ -1,54 +1,54 @@
 [
     {
       "_id": "628b0d5653402551bdae91b4",
-      "name": "leather wallet",
-      "img": "https://static.aadi.com.bd/__sized__/products/43807/15259-43807-wallets-wildwoven-leather-products-89598-0-thumbnail-1080x1080-70.jpg",
-      "description": "leather wallet",
+      "name": "Oled Display",
+      "img": "https://www.lcd-module.com/fileadmin/html-seiten/images/oled/xOLED_mit_Pins_auf_Hintergrund_blau.jpg.pagespeed.ic.NW5cavuXTe.jpg",
+      "description": "OLED is a type of electroluminescent display technology",
       "prize": 300,
-      "availableQuantity": 7000 ,
-      "minQuantity": 1200
+      "availableQuantity": 9000 ,
+      "minQuantity": 600
     },
     {
       "_id": "628b0d56d94d08061ced1648",
-      "name": "leather wallet",
-      "img": "https://static.aadi.com.bd/__sized__/products/43807/15259-43807-wallets-wildwoven-leather-products-89598-0-thumbnail-1080x1080-70.jpg",
-      "description": "leather wallet",
-      "prize": 300,
-      "availableQuantity": 7000 ,
-      "minQuantity": 1200
+      "name": "Lens",
+      "img": "https://media.istockphoto.com/vectors/realistic-camera-lens-on-white-background-vector-id847730552?k=20&m=847730552&s=612x612&w=0&h=Z3at5Rm53GBoLQatDh14TdkQhwjm9xj_LqKY2hW5Gf0=",
+      "description": "A lens is a tool used to bring light to a fixed focal point.",
+      "prize": 650,
+      "availableQuantity": 6000 ,
+      "minQuantity": 200
     },
     {
       "_id": "628b0d565d5a8082e7b84801",
-      "name": "leather wallet",
-      "img": "https://static.aadi.com.bd/__sized__/products/43807/15259-43807-wallets-wildwoven-leather-products-89598-0-thumbnail-1080x1080-70.jpg",
-      "description": "leather wallet",
-      "prize": 300,
-      "availableQuantity": 7000 ,
-      "minQuantity": 1200
+      "name": "Battery",
+      "img": "https://image.made-in-china.com/2f0j00IoHRQhDcZAqd/iPhone-6-Battery-Mobile-Phone-Battery-iPhone-Battery-iPhone-6s-Battery-Original-iPhone-Battery.jpg",
+      "description": "A cell phone battery is a rechargeable battery that allows a cellular phone to be used anywhere.",
+      "prize": 200,
+      "availableQuantity": 13000 ,
+      "minQuantity": 1500
     },
     {
       "_id": "628b0d5685f90bcb182e954b",
-      "name": "leather wallet",
-      "img": "https://static.aadi.com.bd/__sized__/products/43807/15259-43807-wallets-wildwoven-leather-products-89598-0-thumbnail-1080x1080-70.jpg",
-      "description": "leather wallet",
+      "name": "Charger",
+      "img": "https://5.imimg.com/data5/IS/HU/WB/SELLER-31965140/i-phone-charger-500x500.jpeg",
+      "description": "A mobile charger is a mobile phone accessory that is used to charge Mobile Phone when the battery is low.",
       "prize": 300,
       "availableQuantity": 7000 ,
       "minQuantity": 1200
     },
     {
       "_id": "628b0d5604d4a8d52889d6e6",
-      "name": "leather wallet",
-      "img": "https://static.aadi.com.bd/__sized__/products/43807/15259-43807-wallets-wildwoven-leather-products-89598-0-thumbnail-1080x1080-70.jpg",
-      "description": "leather wallet",
+      "name": "HeadPhone Port",
+      "img": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/headphone_jack_lifewire.jpg",
+      "description": "A small round connector for accepting the pin-shaped plug from a standard pair of music headphones. Older phones used a smaller 2.5mm jack for phone headsets",
       "prize": 300,
       "availableQuantity": 7000 ,
       "minQuantity": 1200
     },
     {
       "_id": "628b0d5618600451dcf00a54",
-      "name": "leather wallet",
-      "img": "https://static.aadi.com.bd/__sized__/products/43807/15259-43807-wallets-wildwoven-leather-products-89598-0-thumbnail-1080x1080-70.jpg",
-      "description": "leather wallet",
+      "name": "BackCover",
+      "img": "https://5.imimg.com/data5/KH/UE/MY-10652282/hard-printed-mobile-back-case-1-2-500x500.jpg",
+      "description": "Back covers safe your phone from the dast and harm",
       "prize": 300,
       "availableQuantity": 7000 ,
       "minQuantity": 1200

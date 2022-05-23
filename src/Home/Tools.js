@@ -1,15 +1,21 @@
 import React, { useEffect, useState } from 'react';
+import Tool from './Tool';
 
 const Tools = () => {
     const [tools, setTools] = useState([])
     useEffect(() =>{
-        fetch('tools.json')
+        fetch('http://localhost:5000/tools')
         .then(res => res.json())
         .then(data => setTools(data))
     },[])
     return (
-        <div>
-          
+        <div className='grid lg:grid-cols-3 sm:grid-cols-1'>
+          {
+              tools.map(tool =><Tool
+              key={tool._id}
+              tool={tool}
+              ></Tool>)
+          }
         </div>
     );
 };
