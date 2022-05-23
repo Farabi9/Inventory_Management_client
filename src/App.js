@@ -2,6 +2,8 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Blog from './Blog/Blog';
 import Dashbord from './Dashboard/Dashboard';
+import MyProfile from './Dashboard/MyProfile';
+import Review from './Dashboard/Review';
 import Home from './Home/Home';
 import Purchase from './Home/Purchase';
 import Login from './Login/Login';
@@ -20,7 +22,10 @@ function App() {
       <Route path='/login' element={<Login></Login>}></Route>
       <Route path='/signup' element={<SignUp></SignUp>}></Route>
       <Route path='/purchase' element={<Purchase></Purchase>}></Route>
-      <Route path='/dashboard' element={<Dashbord></Dashbord>}></Route>
+      <Route path='/dashboard' element={<Dashbord></Dashbord>}>
+        <Route path='profile' element={<MyProfile></MyProfile>}></Route>
+        <Route path='review' element={<Review></Review>}></Route>
+      </Route>
     </Routes>
     <Footer></Footer>
     </div>

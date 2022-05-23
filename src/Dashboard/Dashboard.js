@@ -25,7 +25,7 @@ const [user] =useAuthState(auth);
       <li  className='font-mono font-bold bg-primary rounded-md mt-5'><Link to='/dashboard/review'>Add a Reviews</Link></li>
        <>
         <li  className='font-mono font-bold bg-primary rounded-md mt-5'>
-        <Link to='/dashboard/users'>My Profile</Link></li>
+        <Link to='/dashboard/profile'>My Profile</Link></li>
         
       </>
     </ul>
