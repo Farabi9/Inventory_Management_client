@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Blog from './Blog/Blog';
 import Dashbord from './Dashboard/Dashboard';
 import Home from './Home/Home';
 import Purchase from './Home/Purchase';
@@ -15,6 +16,7 @@ function App() {
     <Navber></Navber>
     <Routes>
       <Route path='/' element={<Home></Home>}></Route>
+      <Route path='/blog' element={<Blog></Blog>}></Route>
       <Route path='/login' element={<Login></Login>}></Route>
       <Route path='/signup' element={<SignUp></SignUp>}></Route>
       <Route path='/purchase' element={<Purchase></Purchase>}></Route>
