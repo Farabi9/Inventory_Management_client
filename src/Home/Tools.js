@@ -17,7 +17,6 @@ const Tools = () => {
               tool={tool}
               ></Tool>)
           }
-          
         </div>
     );
 };
