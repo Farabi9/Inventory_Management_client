@@ -44,8 +44,8 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <div class="navbar-end">
-                   { user ? <li onClick={signout}  class="btn"><Link to='/'>Sign out</Link></li> : <li  class="btn"><Link to='/login'>login</Link></li>}
+                <div className="navbar-end">
+                   { user ? <li onClick={signout}  className="btn"><Link to='/'>Sign out</Link></li> : <li  className="btn"><Link to='/login'>login</Link></li>}
                 </div>
             </div>
 

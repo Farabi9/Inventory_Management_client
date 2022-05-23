@@ -1,6 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import './App.css';
 import Blog from './Blog/Blog';
+import AddProduct from './Dashboard/AddProduct';
 import Dashbord from './Dashboard/Dashboard';
 import MyProfile from './Dashboard/MyProfile';
 import Review from './Dashboard/Review';
@@ -26,9 +28,11 @@ function App() {
       <Route path='/dashboard' element={<Dashbord></Dashbord>}>
         <Route path='profile' element={<MyProfile></MyProfile>}></Route>
         <Route path='review' element={<Review></Review>}></Route>
+        <Route path='addproduct' element={<AddProduct></AddProduct>}></Route>
       </Route>
     </Routes>
     <Footer></Footer>
+<ToastContainer/>
     </div>
   );
 }
