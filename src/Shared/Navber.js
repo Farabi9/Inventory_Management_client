@@ -17,9 +17,10 @@ const Navbar = () => {
     const menuItems = <>
         <li className='text-xl'><Link to='/'>Home</Link></li>
         <li className='text-xl'><Link to='/protfolio'>Protfolio</Link></li>
-
+        <li className='text-xl'><Link to='/blog'>Blog</Link></li>
         <li className='text-xl'><Link to='/contract'>Contract</Link></li>
         <li className='text-xl'><Link to='/about'>About</Link></li>
+        {user && <li className='text-xl'><Link to='/dashboard'>Dashboard</Link></li>}
 
     </>
     return (

@@ -1,0 +1,56 @@
+[
+    {
+      "_id": "628b0d5653402551bdae91b4",
+      "name": "leather wallet",
+      "img": "https://static.aadi.com.bd/__sized__/products/43807/15259-43807-wallets-wildwoven-leather-products-89598-0-thumbnail-1080x1080-70.jpg",
+      "description": "leather wallet",
+      "prize": 300,
+      "availableQuantity": 7000 ,
+      "minQuantity": 1200
+    },
+    {
+      "_id": "628b0d56d94d08061ced1648",
+      "name": "leather wallet",
+      "img": "https://static.aadi.com.bd/__sized__/products/43807/15259-43807-wallets-wildwoven-leather-products-89598-0-thumbnail-1080x1080-70.jpg",
+      "description": "leather wallet",
+      "prize": 300,
+      "availableQuantity": 7000 ,
+      "minQuantity": 1200
+    },
+    {
+      "_id": "628b0d565d5a8082e7b84801",
+      "name": "leather wallet",
+      "img": "https://static.aadi.com.bd/__sized__/products/43807/15259-43807-wallets-wildwoven-leather-products-89598-0-thumbnail-1080x1080-70.jpg",
+      "description": "leather wallet",
+      "prize": 300,
+      "availableQuantity": 7000 ,
+      "minQuantity": 1200
+    },
+    {
+      "_id": "628b0d5685f90bcb182e954b",
+      "name": "leather wallet",
+      "img": "https://static.aadi.com.bd/__sized__/products/43807/15259-43807-wallets-wildwoven-leather-products-89598-0-thumbnail-1080x1080-70.jpg",
+      "description": "leather wallet",
+      "prize": 300,
+      "availableQuantity": 7000 ,
+      "minQuantity": 1200
+    },
+    {
+      "_id": "628b0d5604d4a8d52889d6e6",
+      "name": "leather wallet",
+      "img": "https://static.aadi.com.bd/__sized__/products/43807/15259-43807-wallets-wildwoven-leather-products-89598-0-thumbnail-1080x1080-70.jpg",
+      "description": "leather wallet",
+      "prize": 300,
+      "availableQuantity": 7000 ,
+      "minQuantity": 1200
+    },
+    {
+      "_id": "628b0d5618600451dcf00a54",
+      "name": "leather wallet",
+      "img": "https://static.aadi.com.bd/__sized__/products/43807/15259-43807-wallets-wildwoven-leather-products-89598-0-thumbnail-1080x1080-70.jpg",
+      "description": "leather wallet",
+      "prize": 300,
+      "availableQuantity": 7000 ,
+      "minQuantity": 1200
+    }
+  ]

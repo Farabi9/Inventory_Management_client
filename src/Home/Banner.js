@@ -13,7 +13,7 @@ const Banner = () => {
       <br />
       We provide fast delivery and customer satisfaction
       </p>
-      <button class="btn btn-primary font-bold"><Link to='/products'>Find Items</Link></button>
+      <button class="btn btn-primary font-bold"><Link to='/dashboard'>Find Items</Link></button>
     </div>
   </div>
 </div>
