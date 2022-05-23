@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Purchase from './Purchase';
 import Tool from './Tool';
 
 const Tools = () => {
@@ -16,6 +17,7 @@ const Tools = () => {
               tool={tool}
               ></Tool>)
           }
+          
         </div>
     );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Tool = ({tool}) => {
     const {name, img, description, prize, availableQuantity, minQuantity} = tool;
@@ -12,7 +13,7 @@ const Tool = ({tool}) => {
     <p>Min Quanity: {minQuantity}</p>
     <p>Price per peice: ${prize}</p>
     <div class="card-actions justify-end">
-      <button class="btn btn-primary mx-auto">Buy Now</button>
+      <button class="btn btn-primary mx-auto"><Link to='/purchase'>Buy Now</Link></button>
     </div>
   </div>
 </div>
