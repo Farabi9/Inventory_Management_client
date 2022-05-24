@@ -16,7 +16,7 @@ const Review = () => {
         .then(res => res.json())
         .then( result =>{
          if(result.acknowledged === true){
-            toast("Default Notification !");
+            reset()
          }
         })
     };
