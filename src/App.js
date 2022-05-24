@@ -4,6 +4,7 @@ import './App.css';
 import Blog from './Blog/Blog';
 import AddProduct from './Dashboard/AddProduct';
 import Dashbord from './Dashboard/Dashboard';
+import ManageProducts from './Dashboard/ManageProducts';
 import MyProfile from './Dashboard/MyProfile';
 import Review from './Dashboard/Review';
 import Home from './Home/Home';
@@ -29,6 +30,7 @@ function App() {
         <Route path='profile' element={<MyProfile></MyProfile>}></Route>
         <Route path='review' element={<Review></Review>}></Route>
         <Route path='addproduct' element={<AddProduct></AddProduct>}></Route>
+        <Route path='manageproduct' element={<ManageProducts></ManageProducts>}></Route>
       </Route>
     </Routes>
     <Footer></Footer>
