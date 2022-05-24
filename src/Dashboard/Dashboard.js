@@ -13,7 +13,7 @@ const [user] =useAuthState(auth);
   <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
   <div className="drawer-content ">
       <h2 className='text-3xl font-bold text-purple-500'>Welcome to your Phone Pear Dashboard</h2>
-     <Outlet></Outlet>
+     <Outlet />
     
   
   </div> 
@@ -22,10 +22,10 @@ const [user] =useAuthState(auth);
     <ul className="menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content">
       {/* <!-- Sidebar content here --> */}
       <li className='font-mono font-bold bg-primary rounded-md'><Link to='/dashboard'>My Orders</Link></li>
-      <li  className='font-mono font-bold bg-primary rounded-md mt-5'><Link to='/dashboard/review'>Add a Reviews</Link></li>
+      <li  className='font-mono font-bold bg-primary rounded-md mt-5'><Link to='/dashboard/addreview'>Add a Reviews</Link></li>
        <>
         <li  className='font-mono font-bold bg-primary rounded-md mt-5'>
-        <Link to='/dashboard/profile'>My Profile</Link></li>
+        <Link to='/dashboard/myprofile'>My Profile</Link></li>
         <li  className='font-mono font-bold bg-primary rounded-md mt-5'>
         <Link to='/dashboard/addproduct'>Add Product</Link></li>
         <li  className='font-mono font-bold bg-primary rounded-md mt-5'>

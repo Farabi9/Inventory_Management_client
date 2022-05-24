@@ -6,7 +6,7 @@ import Loading from '../Shared/Loading';
 const AddProduct = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const { isLoading} = useQuery('products', () => fetch('http://localhost:5000/tools').then(res => res.json()));
+    const {isLoading} = useQuery('products', () => fetch('http://localhost:5000/tools').then(res => res.json()));
 
     const imageStorageKey='9905dcb1a2e5f6c27b38cc320f73f926';
 

@@ -17,7 +17,7 @@ const MyProfile = () => {
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
-                <input type="text" placeholder="email" className="input input-bordered" value={user.email} readOnly />
+                <input type="text" placeholder="email" className="input input-bordered" value={user.email}  readOnly/>
               </div>
               <div className="form-control">
                 <label className="label">
