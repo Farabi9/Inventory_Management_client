@@ -4,7 +4,7 @@ import React from 'react';
 const BusinessSummery = () => {
     return (
         <div>
-            <h2 className='text-4xl bg-slate-500 p-5 mx-24 text-primary font-bold mb-8'>The Trust We Have Achived In 5yr</h2>
+            <h2 className='text-4xl bg-yellow-500 p-5 mx-24 text-black  mb-8 uppercase font-extrabold rounded-2xl mt-20'>The Trust We Have Achived In 5yr</h2>
             <div className="divider"></div>
             <div className="divider"></div>
             <div className="stats shadow w-full my-5 bg-white-300">

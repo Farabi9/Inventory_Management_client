@@ -14,6 +14,7 @@ import RequireAuth from './Login/RequireAuth';
 import SignUp from './Login/Signup';
 import Footer from './Shared/Footer';
 import Navber from './Shared/Navber';
+import Unwantedpage from './Shared/Unwantedpage';
 
 function App() {
  
@@ -33,6 +34,7 @@ function App() {
         <Route path='addproduct' element={<AddProduct></AddProduct>}></Route>
         <Route path='manageproduct' element={<ManageProducts></ManageProducts>}></Route>
       </Route>
+      <Route path='*' element={<Unwantedpage></Unwantedpage>}></Route>
     </Routes>
     <Footer></Footer>
 <ToastContainer/>
