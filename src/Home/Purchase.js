@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import auth from '../firebase.init';
 
 
@@ -21,7 +21,7 @@ const Purchase = () => {
         setProduct(data)
       });
   }, [id])
-
+const navigate =useNavigate();
   const onSubmit = async data =>{
     const url = `http://localhost:5000/addorder`;
     fetch(url, {
@@ -36,6 +36,7 @@ const Purchase = () => {
            if(result.insertedId){
              toast.success('Your Order Placed. Go and Pay for it')
              reset()
+             navigate('/')
            }
             }
         )
@@ -65,7 +66,7 @@ const Purchase = () => {
               type="text"
               value={user.displayName}
               placeholder="Name"
-              className="input input-bordered w-full max-w-xs " readOnly
+              className="input input-bordered font-bold w-full max-w-xs " readOnly
               {...register("name", {
                 required: {
                   value: true,
@@ -84,7 +85,7 @@ const Purchase = () => {
               type="text"
               value={user.email} readOnly
               placeholder="Email"
-              className="input input-bordered w-full max-w-xs"
+              className="input input-bordered font-bold w-full max-w-xs"
               {...register("email", {
                 required: {
                   value: true,               
@@ -137,14 +138,37 @@ const Purchase = () => {
           </div>
           <div className="form-control w-full max-w-xs">
             <label className="label">
+              <span className="label-text font-bold">Product Name</span>
+            </label>
+            <input
+              type="text"
+              value={product.name} readOnly
+              placeholder="Product Name"
+              className="input input-bordered font-bold w-full max-w-xs"
+              {...register("productName", {
+                required: {
+                  value: true,
+                 
+
+                }
+              })}
+            />
+            <label className="label">
+              {errors.productName?.type === 'required' && <span className="label-text-alt text-red-500">{errors.productName.message}</span>}
+
+
+            </label>
+          </div>
+          <div className="form-control w-full max-w-xs">
+            <label className="label">
               <span className="label-text font-bold">Quantity</span>
             </label>
             <input
               type="number"
-              defaultValue={product.minQuantity}
+              defaultValue={product.minQuantity} 
               placeholder="Quantity"
               className="input input-bordered w-full max-w-xs"
-              {...register("Quantity", {
+              {...register("quantity", {
                 required: {
                   value: true,
                   message: 'Quantity is Required'
