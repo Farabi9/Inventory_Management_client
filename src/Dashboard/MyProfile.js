@@ -11,7 +11,7 @@ const MyProfile = () => {
         <div className="hero-content w-full">
           <div className="text-center lg:text-left">
           </div>
-          <div className="card flex-shrink-0 w-full  shadow-2xl bg-base-100">
+          <div className="card w-full  shadow-2xl bg-base-100">
             <div className="card-body">
               <div className="form-control">
                 <label className="label">

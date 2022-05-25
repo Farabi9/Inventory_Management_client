@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
 
@@ -41,11 +42,11 @@ const AddProduct = () => {
                 .then(res => res.json())
                 .then(inserted =>{
                   if(inserted.insertedId){
-                    alert('Product Added Successfully')
+                    toast.success('Product Added Successfully')
                     reset()
                   }
                   else{
-                      alert('Failed to add product')
+                      toast.error('Failed to add product')
                   }
                 })
             }
