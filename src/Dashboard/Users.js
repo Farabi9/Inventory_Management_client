@@ -27,7 +27,7 @@ const Users = () => {
                     {
                         users.map((u, index) =>  
                         <tr>
-                        <th>1</th>
+                        <th>{index + 1}</th>
                         <td>{u.name}</td>
                         <td>{u.email}</td>
                         <td><button class="btn btn-xs">Admin</button>
