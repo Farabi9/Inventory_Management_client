@@ -30,6 +30,8 @@ const [user] =useAuthState(auth);
         <Link to='/dashboard/addproduct'>Add Product</Link></li>
         <li  className='font-mono font-bold bg-primary rounded-md mt-5'>
         <Link to='/dashboard/manageproduct'>Manage Products</Link></li>
+        <li  className='font-mono font-bold bg-primary rounded-md mt-5'>
+        <Link to='/dashboard/users'>All Users</Link></li>
         
       </>
     </ul>

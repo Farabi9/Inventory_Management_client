@@ -19,6 +19,7 @@ import Contract from './Contract/Contract';
 import About from './About/About';
 import { Toaster } from 'react-hot-toast';
 import Myorder from './Dashboard/Myorder';
+import Users from './Dashboard/Users';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
           <Route path='addreview' element={<Review></Review>}></Route>
           <Route path='addproduct' element={<AddProduct></AddProduct>}></Route>
           <Route path='manageproduct' element={<ManageProducts></ManageProducts>}></Route>
+          <Route path='users' element={<Users></Users>}></Route>
         </Route>
         <Route path='*' element={<Unwantedpage></Unwantedpage>}></Route>
       </Routes>

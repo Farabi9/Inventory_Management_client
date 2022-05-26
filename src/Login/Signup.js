@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../firebase.init';
+import toast from 'react-hot-toast';
 
 
 const SignUp = () => {
@@ -19,7 +20,6 @@ const SignUp = () => {
     ] = useCreateUserWithEmailAndPassword(auth);
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
-    // const [token] = useToken(user || gUser)
 
     let signInError;
     if (loading || gLoading || updating) {
@@ -36,7 +36,29 @@ const SignUp = () => {
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName: data.name });
-        console.log('update done')
+        if(data.password){
+            const user ={
+                name: data.name,
+                email: data.email
+            }
+            fetch('http://localhost:5000/users',{
+                method: 'POST',
+                headers:{
+               'content-type':'application/json'
+                },
+                body: JSON.stringify(user)
+            })
+            .then(res => res.json())
+            .then(result => {
+                if(result.acknowledged === true){
+                    toast.success('Successfully created account')
+                }
+                else{
+                    toast.error('Failed to create')
+                }
+            })
+
+        }
     }
     return (
         <div className='flex h-screen justify-center items-center'>
