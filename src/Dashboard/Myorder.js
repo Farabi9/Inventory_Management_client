@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 
 const Myorder = () => {
@@ -12,6 +12,7 @@ const Myorder = () => {
                 setOrders(result)
             })
     }, [email])
+    
     return (
         <div class="overflow-x-auto">
 
@@ -24,6 +25,8 @@ const Myorder = () => {
                         <th>Email</th>
                         <th>Product Orderd</th>
                         <th>quantity</th>
+                        <th>Price</th>
+                        <th></th>
                         <th></th>
                     </tr>
                 </thead>
@@ -36,8 +39,13 @@ const Myorder = () => {
                             <td>{or.email}</td>
                             <td>{or.productName}</td>
                             <td>{or.quantity}</td>
-                            <td> <button class="btn btn-sm bg-red-500 text-black mr-2">Cancel Order</button>
-                                <button class="btn btn-sm text-black bg-green-400 p-2">Pay</button></td>
+                            <td>{or.prize}</td>
+                            <td>
+                            <Link to={`/dashboard/payment/${or._id}`}><button className='btn btn-sm btn-success'>cancel</button></Link>
+                            </td>
+                            <td>  
+                            <Link to={`/dashboard/payment/${or._id}`}><button className='btn btn-sm btn-success'>Pay</button></Link>
+                            </td>
 
 
                         </tr>)

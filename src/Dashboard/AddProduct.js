@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
+import Users from './Users';
 
 const AddProduct = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
-
-    const {isLoading} = useQuery('products', () => fetch('http://localhost:5000/tools').then(res => res.json()));
+     const [p, setP] = useState()
+    const {isLoading, refetch} = useQuery('products', () => fetch('http://localhost:5000/tools').then(res => res.json()));
 
     const imageStorageKey='9905dcb1a2e5f6c27b38cc320f73f926';
 
@@ -58,11 +59,11 @@ const AddProduct = () => {
 
 
     return (
-        <div>
-            <h2 className="text-2xl">Add a New Doctor</h2>
-            <form onSubmit={handleSubmit(onSubmit)}>
+        <div className='card w-full bg-green-300 p-5 mt-2 rounded-3lg shadow-2xl mb-4'>
+            <h2 className=" text-3xl font-sans font-bold mt-10">Add a New Product</h2>
+            <form  onSubmit={handleSubmit(onSubmit)}>
 
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs mx-auto mt-5 ">
                     <label className="label">
                         <span className="label-text font-bold">Name</span>
                     </label>
@@ -84,7 +85,7 @@ const AddProduct = () => {
 
                     </label>
                 </div>
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs mx-auto">
                     <label className="label">
                         <span className="label-text font-bold">Short Description</span>
                     </label>
@@ -106,9 +107,9 @@ const AddProduct = () => {
 
                     </label>
                 </div>
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs mx-auto">
                     <label className="label">
-                        <span className="label-text font-bold">Short Description</span>
+                        <span className="label-text font-bold">Price</span>
                     </label>
                     <input
                         type="number"
@@ -128,9 +129,9 @@ const AddProduct = () => {
 
                     </label>
                 </div>
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs mx-auto">
                     <label className="label">
-                        <span className="label-text font-bold">Short Description</span>
+                        <span className="label-text font-bold">Available Quantity</span>
                     </label>
                     <input
                         type="number"
@@ -150,7 +151,7 @@ const AddProduct = () => {
 
                     </label>
                 </div>
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs mx-auto">
                     <label className="label">
                         <span className="label-text font-bold">Min-Quantity</span>
                     </label>
@@ -174,7 +175,7 @@ const AddProduct = () => {
                 </div>
               
 
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs mx-auto">
                     <label className="label">
                         <span className="label-text">Photo</span>
                     </label>
@@ -196,7 +197,7 @@ const AddProduct = () => {
                     </label>
                     <input className='btn w-full max-w-xs text-white' type="submit" value='Add' />
                 </div>
-              
+            
             </form>
         </div>
     );

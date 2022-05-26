@@ -21,6 +21,7 @@ import { Toaster } from 'react-hot-toast';
 import Myorder from './Dashboard/Myorder';
 import Users from './Dashboard/Users';
 import AllOrder from './Dashboard/AllOrder';
+import Payment from './Dashboard/Payment';
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
           <Route path='manageproduct' element={<ManageProducts></ManageProducts>}></Route>
           <Route path='users' element={<Users></Users>}></Route>
           <Route path='allorder' element={<AllOrder></AllOrder>}></Route>
+          <Route path='payment/:id' element={<Payment></Payment>}></Route>
         </Route>
         <Route path='*' element={<Unwantedpage></Unwantedpage>}></Route>
       </Routes>

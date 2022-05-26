@@ -181,6 +181,28 @@ const navigate =useNavigate();
             </label>
 
           </div>
+          <div className="form-control w-full max-w-xs">
+            <label className="label">
+              <span className="label-text font-bold">Price</span>
+            </label>
+            <input
+              type="number"
+              defaultValue={product.prize} readOnly
+              placeholder="Price"
+              className="input input-bordered w-full max-w-xs"
+              {...register("prize", {
+                required: {
+                  value: true,
+                 
+
+                },
+              })}
+            />
+            <label className="label">
+              {errors.prize?.type === 'required' && <span className="label-text-alt text-red-500">{errors.prize.message}</span>}
+            </label>
+
+          </div>
           <input className='btn w-full max-w-xs text-black bg-primary' type="submit" value='Place Order' />
 
         </form>
