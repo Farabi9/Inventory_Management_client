@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 const Review = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        const url = `http://localhost:5000/addreview`;
+        const url = `https://powerful-retreat-95123.herokuapp.com/addreview`;
         fetch(url, {
             method: "POST",
             headers: {

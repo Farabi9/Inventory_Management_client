@@ -12,14 +12,14 @@ const Users = ({refetch}) => {
  const {email} = useParams()
 
  useEffect(() =>{
-     fetch(`http://localhost:5000/user/admin/${email}`)
+     fetch(`https://powerful-retreat-95123.herokuapp.com/user/admin/${email}`)
      .then(res => res.json())
      .then(result => {
          setAdminUser(result)
      })
  },[email])
  useEffect(() =>{
-     fetch('http://localhost:5000/users')
+     fetch('https://powerful-retreat-95123.herokuapp.com/users')
      .then(res => res.json())
      .then(result => setUsers(result))
  },[])

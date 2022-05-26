@@ -8,7 +8,7 @@ import Users from './Users';
 const AddProduct = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
      const [p, setP] = useState()
-    const {isLoading, refetch} = useQuery('products', () => fetch('http://localhost:5000/tools').then(res => res.json()));
+    const {isLoading, refetch} = useQuery('products', () => fetch('https://powerful-retreat-95123.herokuapp.com/tools').then(res => res.json()));
 
     const imageStorageKey='9905dcb1a2e5f6c27b38cc320f73f926';
 
@@ -33,7 +33,7 @@ const AddProduct = () => {
                     minQuantity: data.minQuantity,
                     img: img,
                 }
-                fetch('http://localhost:5000/products', {
+                fetch('https://powerful-retreat-95123.herokuapp.com/products', {
                     method:'POST',
                     headers: {
                         'content-type': 'application/json'

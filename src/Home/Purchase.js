@@ -15,7 +15,7 @@ const Purchase = () => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/tools/${id}`)
+    fetch(`https://powerful-retreat-95123.herokuapp.com/tools/${id}`)
       .then(res => res.json())
       .then(data => {
         setProduct(data)
@@ -23,7 +23,7 @@ const Purchase = () => {
   }, [id])
 const navigate =useNavigate();
   const onSubmit = async data =>{
-    const url = `http://localhost:5000/addorder`;
+    const url = `https://powerful-retreat-95123.herokuapp.com/addorder`;
     fetch(url, {
         method: "POST",
         headers: {

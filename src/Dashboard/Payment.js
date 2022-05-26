@@ -10,7 +10,7 @@ const Payment = () => {
     const [payment, setPayment] = useState([])
     const [price, setPrice] = useState([])
     const { id } = useParams();
-    const url = `http://localhost:5000/payment/${id}`
+    const url = `https://powerful-retreat-95123.herokuapp.com/payment/${id}`
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -18,7 +18,7 @@ const Payment = () => {
     }, [])
 
     useEffect(() =>{
-        fetch(`http://localhost:5000/tools/${id}`)
+        fetch(`https://powerful-retreat-95123.herokuapp.com/tools/${id}`)
         .then(res => res.json())
         .then(resu => setPayment(resu))
     },[])

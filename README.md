@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# PHONE PEAR
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Live Link [Phone Pear](https://github.com/facebook/create-react-app).
+
+## Tecnology I have used
+
+* React app
+* git hub
+* firebase
+* react router
+* react firebase hooks
+* useform
+* usequery
+* stripe
+
 
 ## Available Scripts
 
